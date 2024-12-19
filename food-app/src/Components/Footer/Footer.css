@@ -1,0 +1,154 @@
+/*.footer{
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top: 100px;
+}
+.footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+.footer-content-right , .footer-content-left , .footer-content-center{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.footer-content-right li, .footer-content-left li , .footer-content-center li{
+   list-style: none;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+.footer-content-right h2, .footer-content-center h2{
+   color: white;
+ }
+ .social-icon{
+    width: 40px;
+    margin-right: 15px;
+ }
+ .footer hr{
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: gray;
+    border: none;
+ }
+*/
+/* Footer Styling */
+.footer {
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+  }
+  
+  .footer-content-right,
+  .footer-content-left,
+  .footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  
+  .footer-content-right li,
+  .footer-content-left li,
+  .footer-content-center li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Header Styling */
+  .footer-content-right h2,
+  .footer-content-center h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ff6347; /* Tomato color */
+    padding-bottom: 5px;
+  }
+  
+  /* Social Media Icons */
+  .social-icon {
+    width: 40px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #ff6347; /* Tomato color */
+  }
+  
+  /* Hover effects for footer links */
+  .footer-content-right li:hover,
+  .footer-content-left li:hover,
+  .footer-content-center li:hover {
+    color: #ff6347; /* Tomato color */
+  }
+  
+  .footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: gray;
+    border: none;
+  }
+  
+  .footer-copyright {
+    font-size: 14px;
+    color: #bfbfbf;
+    margin-top: 20px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr; 
+      gap: 40px;
+    }
+  
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+      align-items: center; 
+      text-align: center;
+    }
+  
+    .footer-content-left img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+  
+    .social-icon {
+      margin: 10px;
+    }
+  }
+  

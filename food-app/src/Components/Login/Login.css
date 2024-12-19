@@ -1,0 +1,147 @@
+/* Login.css */
+
+.Login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Dimmed overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .login-popup-container {
+    background: #fff; /* White background */
+    color: #333;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between elements */
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .login-popup-title h2 {
+    margin: 0;
+  }
+  
+  .login-popup-title svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .login-popup-title svg:hover {
+    transform: rotate(90deg); 
+  }
+  
+  .login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+  }
+  
+  .login-popup-inputs input {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .login-popup-inputs input:focus {
+    outline: none;
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  }
+  
+  .Login-popup button {
+    width: 100%;
+    padding: 0.9rem;
+    background:tomato;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .Login-popup button:hover {
+    background:tomato;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+  }
+  
+  .login-popup-condition {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .login-popup-condition input[type="checkbox"] {
+    cursor: pointer;
+  }
+  
+  .login-popup-condition p {
+    margin: 0;
+  }
+  
+  .login-popup-condition p span {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .login-popup-condition p span:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  p {
+    font-size: 0.9rem;
+  }
+  
+  p span {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  p span:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  

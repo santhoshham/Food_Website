@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment Variables
+.env
+
+# Build Files
+dist/
+
+
+# Dependencies
+node_modules/
+
+# Build Files
+build/
+
+# Environment Variables
+.env
+
+# IDE Settings
+.vscode/
+.idea/
+
+# Miscellaneous
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+
+# Compiled files
+*.class
+*.o
+*.so
+

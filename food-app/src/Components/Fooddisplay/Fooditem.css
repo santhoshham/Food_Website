@@ -1,0 +1,122 @@
+/*.food-item{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0p 10px #00000015;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+}
+.food-item-img{
+    width: 90%;
+    border-radius: 15px 15 0px 0px;
+}
+.food-item-info{
+    padding: 20px;
+}
+*/
+.food-item {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.food-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.food-item-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #f0f0f0;
+}
+
+.food-item-info {
+    padding: 16px 20px;
+    text-align: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.food-item-price-counter {
+    display: flex;
+    justify-content: space-between; /* Align price and icons on the ends */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.food-item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.food-item-counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.food-item-counter button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.food-item-counter button:hover {
+    background-color: #c0392b;
+}
+
+.food-item-counter p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .food-item {
+        margin: 10px;
+    }
+    .food-item-img {
+        height: 150px;
+    }
+    .food-item-info {
+        padding: 12px;
+    }
+    .food-item-price {
+        font-size: 14px;
+    }
+    .food-item-counter button {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+    }
+}
+.food-item .food-item-price{
+    font-size: 22px;
+    color: tomato;
+}
